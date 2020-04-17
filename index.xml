@@ -2,13 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Eric Wait</title>
-    <link>http://example.org/</link>
+    <link>https://ericwait.github.io/</link>
     <description>Recent content on Eric Wait</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ericwait.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://ericwait.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ericwait.github.io/about/</guid>
+      <description>I was born in the 80&amp;rsquo;s in a mid-size town in Wisconsin. I feel like my start was quite unassuming. My family had a heavy work ethic and would unwind in true Wisconsin fasion at the end of each week. I spent many of my earlier days playing on or around the Chippewa river. This is where I learned to waterski and enjoy the outdoors. I worked hard through my high school years to the point where I drop some of my extra curricular activities.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://ericwait.github.io/pubs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ericwait.github.io/pubs/</guid>
+      <description>Peer Reviewed Aaron, J., Wait, E., DeSantis, M. &amp;amp; Chew, T.-L.: Practical Considerations in Particle and Object Tracking and Analysis . Current Protocols Cell Biology 2019
+Winter, M., Mankowski, W., Wait, E., Hoz, E. C. D. La, Aguinaldo, A., &amp;amp; Cohen, A. R.: Separating Touching Cells using Pixel Replicated Elliptical Shape Models . IEEE Transactions on Medical Imaging 2018
+Valm A, Cohen S, Legant W, Melunis J, Hershberg U, Wait E, Cohen A, Davidson M, Betzig E, Lippincott-Schwartz J: Applying Systems-level Spectral Imaging and Analysis to Reveal the Organelle Interactome .</description>
+    </item>
     
   </channel>
 </rss>
