@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Off-Topic on Eric Wait</title>
+    <link>https://ericwait.github.io/off-topic/</link>
+    <description>Recent content in Off-Topic on Eric Wait</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ericwait.github.io/off-topic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Current Virus Effecting Humanity</title>
+      <link>https://ericwait.github.io/off-topic/current-virus/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ericwait.github.io/off-topic/current-virus/</guid>
+      <description>This post will grow with time. Currently, I&amp;rsquo;m using this page to collect links that I find useful.
+https://coronavirus.jhu.edu/map.html
+https://nextstrain.org/
+http://book.bionumbers.org/wp-content/uploads/2020/04/SARS-CoV-2_BTN_0401.pdf</description>
+    </item>
+    
+  </channel>
+</rss>
