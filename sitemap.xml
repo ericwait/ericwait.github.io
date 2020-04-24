@@ -17,6 +17,13 @@
   </url>
   
   <url>
+    <loc>https://ericwait.github.io/off-topic/quotes/</loc>
+    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ericwait.github.io/off-topic/current-virus/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
