@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Teches on Eric Wait</title>
-    <link>https://ericwait.com/tech/</link>
-    <description>Recent content in Teches on Eric Wait</description>
+    <title>Eric Wait</title>
+    <link>http://localhost:1313/tech/</link>
+    <description>Recent content on Eric Wait</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Aug 2021 12:09:49 -0500</lastBuildDate>
-    <atom:link href="https://ericwait.com/tech/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Setting Up a Computer from Scratch</title>
-      <link>https://ericwait.com/tech/computer-setup/</link>
-      <pubDate>Thu, 26 Aug 2021 12:09:49 -0500</pubDate>
-      <guid>https://ericwait.com/tech/computer-setup/</guid>
-      <description>Notes and scripts to setup a new or &amp;lsquo;clean&amp;rsquo; computer fast.</description>
-    </item>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:1313/tech/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

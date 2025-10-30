@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "C:/Users/ericw/git/web/ericwait-website",
+	"sourceRoot": "E:/web/ericwait-website",
 	"sources": [
 		"ananke/css/main.css"
 	],

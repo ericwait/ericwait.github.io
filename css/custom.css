@@ -1,3 +1,4 @@
+/* Existing flexbox layout for sticky footer */
 body {
   display: flex;
   min-height: 100vh;
@@ -8,3 +9,46 @@ main {
   flex: 1;
 }
 
+/* Fix narrow column layout on homepage and content pages */
+
+/* Main content container - increase from default narrow width */
+.measure-wide {
+    max-width: 60rem !important; /* Default is usually 34rem */
+}
+
+/* Alternative: Use even wider layout */
+.mw7 {
+    max-width: 72rem !important; /* Default is usually 48rem */
+}
+
+/* For very wide screens, prevent content from getting too wide */
+@media screen and (min-width: 80rem) {
+    .measure-wide {
+        max-width: 70rem !important;
+    }
+}
+
+/* Homepage specific adjustments */
+.home .measure-wide {
+    max-width: 65rem !important;
+}
+
+/* Ensure content uses full available width on mobile */
+@media screen and (max-width: 30rem) {
+    .measure-wide {
+        max-width: 95% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+/* Optional: Adjust padding for better reading experience */
+.ph3 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+/* Fix any overly narrow text blocks */
+.measure {
+    max-width: 45rem !important; /* Default is usually 30rem */
+}

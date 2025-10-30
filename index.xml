@@ -2,53 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Eric Wait</title>
-    <link>https://ericwait.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Eric Wait</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Jul 2025 12:09:49 -0500</lastBuildDate>
-    <atom:link href="https://ericwait.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Sep 2025 16:15:49 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Publications</title>
-      <link>https://ericwait.com/pubs/</link>
-      <pubDate>Sat, 19 Jul 2025 12:09:49 -0500</pubDate>
-      <guid>https://ericwait.com/pubs/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://ericwait.com/pdfs/Eric_Wait_resume.pdf&#34;&gt;Resume&lt;/a&gt;&#xD;&#xA;&#xA;&lt;a href=&#34;https://ericwait.com/pdfs/Eric_Wait_cv_application_emph.pdf&#34;&gt;CV&lt;/a&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;peer-reviewed&#34;&gt;Peer Reviewed&lt;/h2&gt;&#xA;&lt;p&gt;Liu C, Smith J, Yuanbo Wang, Ouellette J, Rogers J, Oliner J, Szulczewski M, &lt;strong&gt;Wait E&lt;/strong&gt;, Brown W, Wax A, Eliceiri K, Rafter J, &lt;a href=&#34;https://doi.org/10.1364/BOE.509835&#34; target=&#34;_blank&#34;&gt;Assessing cell viability with dynamic optical coherence microscopy&lt;/a&gt;&#xD;&#xA;. &lt;em&gt;Biomedical Optics Express&lt;/em&gt; 2024&lt;/p&gt;&#xA;&lt;p&gt;Sinclair R, Wang M, Jawaid, Muhammad Zaki; Longkumer T, Aaron J, Rossetti B, &lt;strong&gt;Wait E&lt;/strong&gt;, McDonald K, Cox D, Heddleston J, &lt;a href=&#34;https://doi.org/10.1093/jxb/erae091&#34; target=&#34;_blank&#34;&gt;Four-dimensional quantitative analysis of cell plate development in Arabidopsis using lattice light sheet microscopy identifies robust transition points between growth phases&lt;/a&gt;&#xD;&#xA;. &lt;em&gt;Journal of Experimental Botany&lt;/em&gt; 2024.&lt;/p&gt;</description>
+      <title>Full Life Journey</title>
+      <link>http://localhost:1313/about/full_journey/</link>
+      <pubDate>Sat, 27 Sep 2025 16:15:49 -0500</pubDate>
+      <guid>http://localhost:1313/about/full_journey/</guid>
+      <description>&lt;p&gt;I was born in the 80&amp;rsquo;s in a mid-size town in Wisconsin.&#xA;I feel like my start was quite unassuming.&#xA;My family had a heavy work ethic and would unwind in true Wisconsin fashion at the end of each week.&#xA;I spent many of my earlier days playing on or around the Chippewa river.&#xA;This is where I learned to &lt;a href=&#34;https://www.google.com/maps/d/edit?mid=zAS1rhpwZS2k.k2-ecmkfhNYg&#34; target=&#34;_blank&#34;&gt;waterski&lt;/a&gt;&#xD;&#xA; and enjoy the outdoors.&#xA;I worked hard through my high school years to the point where I dropped some of my extra curricular activities.&#xA;Hard work and the meager wealth that would bring was always the emphasis from my parents.&#xA;I wanted more though.&#xA;I found that joining the Air National Guard and attending college was a good compromise.&#xA;The military would show that I could work hard and college would help me learn something that could not be had through experience alone.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Setting Up a Computer from Scratch</title>
-      <link>https://ericwait.com/tech/computer-setup/</link>
-      <pubDate>Thu, 26 Aug 2021 12:09:49 -0500</pubDate>
-      <guid>https://ericwait.com/tech/computer-setup/</guid>
-      <description>Notes and scripts to setup a new or &amp;lsquo;clean&amp;rsquo; computer fast.</description>
+      <title>Publications</title>
+      <link>http://localhost:1313/pubs/</link>
+      <pubDate>Sat, 19 Jul 2025 12:09:49 -0500</pubDate>
+      <guid>http://localhost:1313/pubs/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pdfs/Eric_Wait.pdf&#34;&gt;CV&lt;/a&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;peer-reviewed&#34;&gt;Peer Reviewed&lt;/h2&gt;&#xA;&lt;p&gt;Liu C, Smith J, Yuanbo Wang, Ouellette J, Rogers J, Oliner J, Szulczewski M, &lt;strong&gt;Wait E&lt;/strong&gt;, Brown W, Wax A, Eliceiri K, Rafter J, &lt;a href=&#34;https://doi.org/10.1364/BOE.509835&#34; target=&#34;_blank&#34;&gt;Assessing cell viability with dynamic optical coherence microscopy&lt;/a&gt;&#xD;&#xA;. &lt;em&gt;Biomedical Optics Express&lt;/em&gt; 2024&lt;/p&gt;&#xA;&lt;p&gt;Sinclair R, Wang M, Jawaid, Muhammad Zaki; Longkumer T, Aaron J, Rossetti B, &lt;strong&gt;Wait E&lt;/strong&gt;, McDonald K, Cox D, Heddleston J, &lt;a href=&#34;https://doi.org/10.1093/jxb/erae091&#34; target=&#34;_blank&#34;&gt;Four-dimensional quantitative analysis of cell plate development in Arabidopsis using lattice light sheet microscopy identifies robust transition points between growth phases&lt;/a&gt;&#xD;&#xA;. &lt;em&gt;Journal of Experimental Botany&lt;/em&gt; 2024.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Quotes</title>
-      <link>https://ericwait.com/conversation/quotes/</link>
+      <link>http://localhost:1313/conversation/quotes/</link>
       <pubDate>Fri, 04 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://ericwait.com/conversation/quotes/</guid>
+      <guid>http://localhost:1313/conversation/quotes/</guid>
       <description>A growing list of quotes as I encounter them.</description>
     </item>
     <item>
       <title>References for getting a new dog</title>
-      <link>https://ericwait.com/conversation/dog-references/</link>
+      <link>http://localhost:1313/conversation/dog-references/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://ericwait.com/conversation/dog-references/</guid>
+      <guid>http://localhost:1313/conversation/dog-references/</guid>
       <description>Useful links for my first dog.</description>
     </item>
     <item>
       <title>The Current Virus Affecting Humanity</title>
-      <link>https://ericwait.com/conversation/current-virus/</link>
+      <link>http://localhost:1313/conversation/current-virus/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://ericwait.com/conversation/current-virus/</guid>
+      <guid>http://localhost:1313/conversation/current-virus/</guid>
       <description>Links for the Corona virus</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://ericwait.com/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ericwait.com/about/</guid>
-      <description>&lt;p&gt;I was born in the 80&amp;rsquo;s in a mid-size town in Wisconsin.&#xA;I feel like my start was quite unassuming.&#xA;My family had a heavy work ethic and would unwind in true Wisconsin fashion at the end of each week.&#xA;I spent many of my earlier days playing on or around the Chippewa river.&#xA;This is where I learned to &lt;a href=&#34;https://www.google.com/maps/d/edit?mid=zAS1rhpwZS2k.k2-ecmkfhNYg&#34; target=&#34;_blank&#34;&gt;waterski&lt;/a&gt;&#xD;&#xA; and enjoy the outdoors.&#xA;I worked hard through my high school years to the point where I dropped some of my extra curricular activities.&#xA;Hard work and the meager wealth that would bring was always the emphasis from my parents.&#xA;I wanted more though.&#xA;I found that joining the Air National Guard and attending college was a good compromise.&#xA;The military would show that I could work hard and college would help me learn something that could not be had through experience alone.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
