@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Home Media AI | Eric Wait</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Open-source ML system for organizing and curating 200K&#43; personal photo collections">
+    <meta name="generator" content="Hugo 0.151.0">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.efe4d852f731d5d1fbb87718387202a97aafd768cdcdaed0662bbe6982e91824.css" >
+
+
+
+  
+    <link rel="stylesheet" href="/css/custom.css">
+  
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://ericwait.com/projects/home-media-ai/">
+    
+
+    <meta property="og:url" content="https://ericwait.com/projects/home-media-ai/">
+  <meta property="og:site_name" content="Eric Wait">
+  <meta property="og:title" content="Home Media AI">
+  <meta property="og:description" content="Open-source ML system for organizing and curating 200K&#43; personal photo collections">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2025-11-02T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-11-02T00:00:00+00:00">
+
+  <meta itemprop="name" content="Home Media AI">
+  <meta itemprop="description" content="Open-source ML system for organizing and curating 200K&#43; personal photo collections">
+  <meta itemprop="datePublished" content="2025-11-02T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2025-11-02T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1530">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Home Media AI">
+  <meta name="twitter:description" content="Open-source ML system for organizing and curating 200K&#43; personal photo collections">
+
+      
+    
+	
+  </head><body class="ma0 sans-serif bg-light-gray production">
+
+    
+   
+  
+
+  
+  
+  
+  <header class="cover bg-center" style="background-image: url('https://ericwait.com/images/cameras2.png');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Eric Wait
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/pubs/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/photos/" title="Photography page">
+              Photography
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">Home Media AI</div>
+          
+            <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              Open-source ML system for organizing and curating 200K&#43; personal photo collections
+            </div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        PROJECTS
+      </aside>
+      <div id="sharing" class="mt3 ananke-socials"></div>
+
+      <h1 class="f1 sans-serif mt3 mb1">Home Media AI</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2025-11-02T00:00:00Z">November 2, 2025</time>
+
+      
+      
+        <span class="f6 mv4 dib tracked"> - 8 minutes read</span>
+        <span class="f6 mv4 dib tracked"> - 1530 words</span>
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy sans-serif f4 tj nested-links nested-img mid-gray pr6-l"><h2 id="quick-takeaways">Quick Takeaways</h2>
+<p><strong>Problem:</strong> Finding &ldquo;great photos&rdquo; in 200K+ personal collections—combining objective technical metrics (sharpness, exposure) with subjective aesthetic judgment</p>
+<p><strong>Solution:</strong> Open-source ML system using computer vision, YOLO object detection, and hierarchical classification to surface best images</p>
+<p><strong>Philosophy:</strong> The intersection of art and engineering—translating professional photography judgment into algorithmic rules that scale</p>
+<p><strong>Key Insight:</strong> ML should multiply human capability, not replace it—review top 2,000 candidates instead of 20,000 images</p>
+<p><strong>Technical Approach:</strong> Python/SQLAlchemy, MariaDB, OpenCV/Pillow, YOLO for people/pet detection, scikit-learn for quality models</p>
+<p><strong>Status:</strong> Active development (43+ commits), verified on 700K+ file collections, open source on GitHub</p>
+<p><a href="https://github.com/ericwait/home-media-ai" target="_blank">GitHub →</a>
+ | <a href="../photos">Related: Photography Philosophy →</a>
+</p>
+<hr>
+<h2 id="the-challenge-finding-signal-in-200000-images">The Challenge: Finding Signal in 200,000 Images</h2>
+<p>Most families accumulate thousands of photos each year. My household averages 20,000+ annually—vacations, birthdays, pets, everyday moments. That&rsquo;s over 200,000 images spanning a decade.</p>
+<p>Every year, my wife goes through this entire collection to curate our family calendar. She&rsquo;s looking for:</p>
+<ul>
+<li><strong>Technical quality</strong> - Sharp focus, good exposure, balanced composition</li>
+<li><strong>Aesthetic appeal</strong> - Compelling moments, good light, visual interest</li>
+<li><strong>Semantic relevance</strong> - Birthday photos for birthday months, holiday images for December, pictures featuring specific people or pets</li>
+</ul>
+<p>It&rsquo;s meaningful work—these images tell our family&rsquo;s story. But manually reviewing 20,000 images is exhausting.</p>
+<p><strong>The core problem:</strong> How do you automatically identify &ldquo;great photos&rdquo; when &ldquo;great&rdquo; combines objective technical metrics (sharpness, exposure) with subjective aesthetic judgment (compelling composition, emotional impact)?</p>
+<hr>
+<h2 id="the-solution-ml-powered-photo-curation">The Solution: ML-Powered Photo Curation</h2>
+<p><strong><a href="https://github.com/ericwait/home-media-ai" target="_blank">Home Media AI</a>
+</strong> is an open-source system that combines computer vision, machine learning, and hierarchical classification to surface the best images from massive personal collections.</p>
+<h3 id="core-capabilities">Core Capabilities</h3>
+<p><strong>1. Automated Quality Assessment</strong></p>
+<ul>
+<li>Technical metrics: sharpness (edge detection), exposure balance, noise levels</li>
+<li>Compositional analysis: rule-of-thirds compliance, negative space, subject positioning</li>
+<li>Duplicate and near-duplicate detection (checksummed file tracking)</li>
+</ul>
+<p><strong>2. Rich Semantic Search</strong></p>
+<ul>
+<li>Hierarchical classification support (people, pets, places, events)</li>
+<li>Works with any taxonomy: biological classification (World Flora Online integration), geographic hierarchies, custom family categories</li>
+<li>Relationship tracking: &ldquo;Find photos of [person] at [location] during [time period]&rdquo;</li>
+</ul>
+<p><strong>3. Scale-Tested Architecture</strong></p>
+<ul>
+<li>Verified to handle 700K+ file collections</li>
+<li>Files stay in original locations—metadata tracked separately</li>
+<li>Relationship mapping between originals and edited versions</li>
+<li>Cross-platform: Windows, Mac, Linux path support</li>
+</ul>
+<p><strong>4. Long-Term Reliability</strong></p>
+<ul>
+<li>Everything checksummed and versioned</li>
+<li>Auditable: never moves or deletes files</li>
+<li>Handles duplicate detection across drives and backups</li>
+</ul>
+<h3 id="the-goal-multiply-human-curation">The Goal: Multiply Human Curation</h3>
+<p>The system doesn&rsquo;t replace human judgment—it multiplies it. Instead of reviewing 20,000 images, curators review the top 2,000 candidates the ML system surfaces. The human still makes the final decision, but with 90% less exhaustion.</p>
+<hr>
+<h2 id="technical-architecture">Technical Architecture</h2>
+<h3 id="backend-stack">Backend Stack</h3>
+<ul>
+<li><strong>Python</strong> with <strong>SQLAlchemy ORM</strong> for flexible data modeling</li>
+<li><strong>MariaDB 10.11+</strong> (UTF-8mb4 support for international text/emoji)</li>
+<li><strong>NumPy/Pandas</strong> for data processing pipelines</li>
+<li><strong>Scikit-learn</strong> for ML classification models</li>
+</ul>
+<h3 id="media-processing--ml">Media Processing &amp; ML</h3>
+<ul>
+<li><strong>OpenCV</strong> for image analysis (edge detection, histogram analysis, feature extraction)</li>
+<li><strong>Pillow</strong> for format handling and EXIF data extraction</li>
+<li><strong>exifread</strong> for metadata parsing (camera settings, timestamps, GPS)</li>
+<li><strong>YOLO (You Only Look Once)</strong> for real-time object detection and classification
+<ul>
+<li>Identifying people, pets, and objects in images</li>
+<li>Pre-trained models fine-tuned on personal photo collection</li>
+<li>Enables semantic search: &ldquo;Find photos with our dog at the beach&rdquo;</li>
+</ul>
+</li>
+</ul>
+<h3 id="development-environment">Development Environment</h3>
+<ul>
+<li><strong>Jupyter Lab</strong> for exploratory data analysis and model tuning</li>
+<li><strong>Mamba</strong> for reproducible environment management</li>
+<li>Phase-based development: Core discovery (Phase I) → ML models (Phase II) → Web interface (Phase III)</li>
+</ul>
+<h3 id="database-design-philosophy">Database Design Philosophy</h3>
+<p>The system uses a <strong>relational database to track media and their relationships to classification hierarchies</strong>:</p>
+<pre tabindex="0"><code>MediaFiles (checksummed tracking)
+  ↓
+MediaRelationships (originals → edits)
+  ↓
+ClassificationLinks (files → hierarchical taxonomies)
+  ↓
+TaxonomyNodes (hierarchical classification systems)
+</code></pre><p>This design allows:</p>
+<ul>
+<li>Multiple simultaneous classification systems per media item (e.g., a photo can be tagged with biological taxonomy AND family event categories)</li>
+<li>Version tracking (linking RAW → edited JPG)</li>
+<li>Flexible hierarchies (person/pet names, locations, dates, custom categories)</li>
+</ul>
+<hr>
+<h2 id="the-intersection-art-meets-engineering">The Intersection: Art Meets Engineering</h2>
+<p>This project embodies the &ldquo;intersection philosophy&rdquo; that drives my technical work:</p>
+<p><strong>Artistic Training → Technical Implementation</strong></p>
+<p>My background as a professional photographer taught me what makes a photo compelling:</p>
+<ul>
+<li>Compositional balance (rule-of-thirds, leading lines, negative space)</li>
+<li>Light quality (golden hour, directional lighting, shadow/highlight balance)</li>
+<li>The decisive moment (timing, expression, action peaks)</li>
+</ul>
+<p>Translating these intuitions into algorithmic rules is the challenge:</p>
+<ul>
+<li>&ldquo;Good composition&rdquo; → edge detection patterns, symmetry analysis, subject positioning heuristics</li>
+<li>&ldquo;Compelling light&rdquo; → histogram analysis, dynamic range metrics, color temperature evaluation</li>
+<li>&ldquo;The decisive moment&rdquo; → temporal burst analysis, facial expression detection, motion blur assessment</li>
+</ul>
+<p><strong>Human-Centered ML</strong></p>
+<p>The system is designed around a core insight: <strong>ML should amplify human capability, not replace human judgment</strong>.</p>
+<p>My wife has curated our family photos for years—she has taste, context, and emotional connection that no algorithm can replicate. The goal isn&rsquo;t to automate her out of the process. It&rsquo;s to give her back hours of her life by surfacing candidates worth considering.</p>
+<p>This philosophy applies to all my ML work: physics-informed neural networks that encode domain knowledge, GPU-accelerated pipelines that augment scientist workflows, explainable models that support human decision-making.</p>
+<hr>
+<h2 id="implementation-status--roadmap">Implementation Status &amp; Roadmap</h2>
+<h3 id="phase-i-core-infrastructure-in-progress">Phase I: Core Infrastructure (In Progress)</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Database schema design and migration system</li>
+<li><input checked="" disabled="" type="checkbox"> Media file discovery and checksumming</li>
+<li><input checked="" disabled="" type="checkbox"> Cross-platform path handling</li>
+<li><input checked="" disabled="" type="checkbox"> Duplicate detection logic</li>
+<li><input checked="" disabled="" type="checkbox"> Configuration management</li>
+<li><input disabled="" type="checkbox"> Complete EXIF/metadata extraction pipeline</li>
+</ul>
+<h3 id="phase-ii-ml-classification-in-progress">Phase II: ML Classification (In Progress)</h3>
+<ul>
+<li><input disabled="" type="checkbox"> Quality assessment models (technical metrics)</li>
+<li><input disabled="" type="checkbox"> Aesthetic scoring (compositional analysis)</li>
+<li><input checked="" disabled="" type="checkbox"> <strong>YOLO-based object detection</strong> - Real-time identification of people, pets, and objects
+<ul>
+<li>Fine-tuning pre-trained models on personal photo collection</li>
+<li>Enabling semantic queries: &ldquo;Photos with [person] and [pet]&rdquo;</li>
+<li>Bounding box extraction for face/subject cropping</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> Hierarchical classification integration</li>
+<li><input disabled="" type="checkbox"> Model training pipeline for quality/aesthetic scoring</li>
+</ul>
+<h3 id="phase-iii-user-interface-future">Phase III: User Interface (Future)</h3>
+<ul>
+<li><input disabled="" type="checkbox"> Web-based curation interface</li>
+<li><input disabled="" type="checkbox"> Search and filter capabilities</li>
+<li><input disabled="" type="checkbox"> Calendar generation automation</li>
+<li><input disabled="" type="checkbox"> Batch export and sharing tools</li>
+</ul>
+<h3 id="phase-iv-community-features-future">Phase IV: Community Features (Future)</h3>
+<ul>
+<li><input disabled="" type="checkbox"> Shared classification taxonomies</li>
+<li><input disabled="" type="checkbox"> Pre-trained aesthetic models</li>
+<li><input disabled="" type="checkbox"> Plugin system for custom classifiers</li>
+<li><input disabled="" type="checkbox"> Documentation and tutorials</li>
+</ul>
+<hr>
+<h2 id="real-world-impact">Real-World Impact</h2>
+<p><strong>Current Use Case:</strong> Family photo archival and calendar curation</p>
+<ul>
+<li>200K+ images spanning 10+ years</li>
+<li>20K+ annual additions</li>
+<li>Handles multiple cameras, phones, and formats</li>
+<li>Preserves original files while tracking edits and versions</li>
+</ul>
+<p><strong>Potential Applications:</strong></p>
+<ul>
+<li><strong>Nature photography organization</strong> - Integrate with biological taxonomies (World Flora Online, eBird)</li>
+<li><strong>Travel documentation</strong> - Hierarchical geographic classification</li>
+<li><strong>Technical equipment cataloging</strong> - Product photo organization</li>
+<li><strong>Professional portfolio curation</strong> - Quality-based filtering for client galleries</li>
+<li><strong>Digital archival projects</strong> - Long-term family/organizational media preservation</li>
+</ul>
+<hr>
+<h2 id="open-source--community">Open Source &amp; Community</h2>
+<p>The project is <strong><a href="https://github.com/ericwait/home-media-ai" target="_blank">open source on GitHub</a>
+</strong> with active development (43+ commits).</p>
+<p><strong>Why open source?</strong></p>
+<ul>
+<li>Personal media archival is a universal challenge</li>
+<li>Shared taxonomies and models benefit everyone</li>
+<li>Community contributions accelerate development</li>
+<li>Transparency builds trust for family archival systems</li>
+</ul>
+<p><strong>Contributing:</strong>
+The project welcomes contributions—whether suggesting features, reporting issues, contributing classification taxonomies, or improving ML models. Check the repository for current priorities and development guidelines.</p>
+<hr>
+<h2 id="technical-highlights">Technical Highlights</h2>
+<h3 id="modern-ml-yolo-for-object-detection">Modern ML: YOLO for Object Detection</h3>
+<ul>
+<li>Real-time object detection using YOLO (You Only Look Once)</li>
+<li>Pre-trained on COCO dataset, fine-tuned on personal collection</li>
+<li>Enables semantic search beyond simple keyword tags</li>
+<li>Example queries: &ldquo;Photos with both kids and the dog&rdquo;, &ldquo;Images featuring specific people at specific locations&rdquo;</li>
+<li>Bounding box data stored for future cropping/thumbnail generation</li>
+</ul>
+<h3 id="scale-tested-design">Scale-Tested Design</h3>
+<ul>
+<li>Verified on 700K+ file collections</li>
+<li>Efficient database indexing for fast queries</li>
+<li>Incremental processing (only analyze new/changed files)</li>
+</ul>
+<h3 id="file-integrity">File Integrity</h3>
+<ul>
+<li>Checksummed tracking prevents duplicates</li>
+<li>Never moves or deletes original files</li>
+<li>Separate metadata database keeps files untouched</li>
+</ul>
+<h3 id="flexible-classification">Flexible Classification</h3>
+<ul>
+<li>Works with any hierarchical taxonomy</li>
+<li>Example: World Flora Online (WFO) plant classification integrated</li>
+<li>Custom taxonomies for family/personal categories</li>
+</ul>
+<h3 id="cross-platform">Cross-Platform</h3>
+<ul>
+<li>Native Windows, Mac, Linux path support</li>
+<li>Handles network shares and external drives</li>
+<li>Docker deployment for portability</li>
+</ul>
+<hr>
+<h2 id="lessons-learned-building-ml-for-real-users">Lessons Learned: Building ML for Real Users</h2>
+<h3 id="1-perfect-is-the-enemy-of-shipped">1. Perfect is the Enemy of Shipped</h3>
+<p>Early versions focused on sophisticated aesthetic models. Reality: even basic quality metrics (sharpness, exposure) provide 80% of the value. Ship incrementally.</p>
+<h3 id="2-respect-user-workflows">2. Respect User Workflows</h3>
+<p>Users already have folder structures, backup routines, and editing workflows. Don&rsquo;t force them to change. The &ldquo;files stay put&rdquo; design principle came from listening to real needs.</p>
+<h3 id="3-explain-decisions">3. Explain Decisions</h3>
+<p>ML models that rank photos should explain <em>why</em>. &ldquo;High quality&rdquo; is less useful than &ldquo;Sharp focus, good exposure, rule-of-thirds composition&rdquo;. Explainability builds trust.</p>
+<h3 id="4-build-for-maintenance">4. Build for Maintenance</h3>
+<p>Personal photo collections span decades. The system must be maintainable long-term. Clear database schema, versioned migrations, and minimal dependencies matter.</p>
+<p>These lessons apply beyond family photos—they&rsquo;re principles for any production ML system.</p>
+<hr>
+<h2 id="future-directions">Future Directions</h2>
+<h3 id="short-term">Short-Term</h3>
+<ul>
+<li>Complete Phase I media discovery pipeline</li>
+<li>Implement basic quality assessment models</li>
+<li>Build proof-of-concept web interface</li>
+</ul>
+<h3 id="medium-term">Medium-Term</h3>
+<ul>
+<li>Train aesthetic models on curated personal dataset</li>
+<li>Integrate face detection for person-based search</li>
+<li>Automated calendar generation from top-ranked images</li>
+</ul>
+<h3 id="long-term">Long-Term</h3>
+<ul>
+<li>Federated learning across multiple family collections (privacy-preserving)</li>
+<li>Mobile app for field tagging during photography</li>
+<li>Integration with cloud photo services (Google Photos, iCloud)</li>
+<li>Community-curated aesthetic models</li>
+</ul>
+<hr>
+<h2 id="links--resources">Links &amp; Resources</h2>
+<p><strong>GitHub Repository:</strong> <a href="https://github.com/ericwait/home-media-ai" target="_blank">https://github.com/ericwait/home-media-ai</a>
+</p>
+<p><strong>Related Projects:</strong></p>
+<ul>
+<li><a href="./hydra">Hydra Image Processor</a>
+ - GPU-accelerated image analysis library</li>
+<li><a href="../photos">Photography</a>
+ - Artistic background and philosophy</li>
+</ul>
+<p><strong>Technologies:</strong></p>
+<ul>
+<li>Python, SQLAlchemy, MariaDB</li>
+<li>OpenCV, Pillow, NumPy, Pandas</li>
+<li>YOLO (object detection), Scikit-learn, Jupyter Lab</li>
+</ul>
+<hr>
+<h2 id="how-this-connects">How This Connects</h2>
+<p><strong>Intersection Philosophy:</strong> See how art meets engineering across my work → <a href="../photos#the-intersection-seeing-patterns-from-landscapes-to-algorithms">Photography</a>
+</p>
+<p><strong>Human-Centered ML:</strong> Explore systems that multiply human capability → <a href="../#-human-centered-ai-design">Home page</a>
+</p>
+<p><strong>Professional Photography Background:</strong> Learn how artistic training shapes technical work → <a href="../photos">Photography</a>
+ and <a href="../about/full_journey#professional-photography">Full Journey</a>
+</p>
+<p><strong>Building What Lasts:</strong> Compare with long-term development practices → <a href="./matlab-utilities">MATLAB Utilities</a>
+</p>
+<p><strong>Technical Approach:</strong> See related ML systems and GPU acceleration → <a href="./hydra">Hydra Image Processor</a>
+</p>
+<p><strong>Design Philosophy:</strong> Read about making optimization accessible → <a href="../about#how-i-build-long-term-excellence">About</a>
+</p>
+<hr>
+<p><em>Building tools that respect both the art and the scale of personal photography—because every family&rsquo;s story deserves to be found.</em></p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://ericwait.com/" >
+    &copy;  Eric Wait 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>MATLAB Utilities: A Decade of Modular Problem-Solving | Eric Wait</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Open-source collection of microscopy analysis tools demonstrating incremental, organized approach to research software development">
+    <meta name="generator" content="Hugo 0.151.0">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.efe4d852f731d5d1fbb87718387202a97aafd768cdcdaed0662bbe6982e91824.css" >
+
+
+
+  
+    <link rel="stylesheet" href="/css/custom.css">
+  
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://ericwait.com/projects/matlab-utilities/">
+    
+
+    <meta property="og:url" content="https://ericwait.com/projects/matlab-utilities/">
+  <meta property="og:site_name" content="Eric Wait">
+  <meta property="og:title" content="MATLAB Utilities: A Decade of Modular Problem-Solving">
+  <meta property="og:description" content="Open-source collection of microscopy analysis tools demonstrating incremental, organized approach to research software development">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2013-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2013-01-01T00:00:00+00:00">
+
+  <meta itemprop="name" content="MATLAB Utilities: A Decade of Modular Problem-Solving">
+  <meta itemprop="description" content="Open-source collection of microscopy analysis tools demonstrating incremental, organized approach to research software development">
+  <meta itemprop="datePublished" content="2013-01-01T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2013-01-01T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1531">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="MATLAB Utilities: A Decade of Modular Problem-Solving">
+  <meta name="twitter:description" content="Open-source collection of microscopy analysis tools demonstrating incremental, organized approach to research software development">
+
+      
+    
+	
+  </head><body class="ma0 sans-serif bg-light-gray production">
+
+    
+   
+  
+
+  
+  
+  
+  <header class="cover bg-center" style="background-image: url('https://ericwait.com/images/circuits.png');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Eric Wait
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/pubs/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/photos/" title="Photography page">
+              Photography
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">MATLAB Utilities: A Decade of Modular Problem-Solving</div>
+          
+            <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              Open-source collection of microscopy analysis tools demonstrating incremental, organized approach to research software development
+            </div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        PROJECTS
+      </aside>
+      <div id="sharing" class="mt3 ananke-socials"></div>
+
+      <h1 class="f1 sans-serif mt3 mb1">MATLAB Utilities: A Decade of Modular Problem-Solving</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2013-01-01T00:00:00Z">January 1, 2013</time>
+
+      
+      
+        <span class="f6 mv4 dib tracked"> - 8 minutes read</span>
+        <span class="f6 mv4 dib tracked"> - 1531 words</span>
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy sans-serif f4 tj nested-links nested-img mid-gray pr6-l"><h2 id="quick-takeaways">Quick Takeaways</h2>
+<p><strong>Core Idea:</strong> Organize research code early (while you have 10 functions, not 1,000) and build foundations that enable future innovation</p>
+<p><strong>Philosophy:</strong> &ldquo;Show your warts&rdquo;—develop in the open, exposing evolution and iterations, not just the polished final result</p>
+<p><strong>Impact:</strong> Foundation for Hydra Image Processor and Direct 5D Viewer, used at HHMI Janelia and collaborating institutions worldwide</p>
+<p><strong>Key Lesson:</strong> The best time to organize is before you have to—modularity compounds, each reusable function becomes foundation for the next</p>
+<p><strong>Timeline:</strong> Started 2013, continuous development through 2024 (11+ years), demonstrates sustained research practice</p>
+<p><strong>Authenticity:</strong> Public from early stages—mistakes, learning moments, and incremental improvements visible in commit history</p>
+<p><a href="https://github.com/ericwait/matlab-utilities" target="_blank">GitHub →</a>
+ | <a href="https://www.mathworks.com/matlabcentral/fileexchange/176913-microscope-utilities" target="_blank">MATLAB File Exchange →</a>
+</p>
+<hr>
+<h2 id="the-philosophy-building-foundations-while-its-still-easy">The Philosophy: Building Foundations While It&rsquo;s Still Easy</h2>
+<p>In 2013, I made a decision that would shape how I approach software development: I started tracking and organizing the helper functions I was building for microscopy analysis <strong>before</strong> they became a tangled mess.</p>
+<p>This wasn&rsquo;t a grand architectural vision. It was a practical choice: <strong>organize early, while it&rsquo;s still easy</strong>. Track utilities modularly. Make them reusable. Document as you go.</p>
+<p>Over a decade later, this collection has grown into the foundation that enabled <a href="./hydra">Hydra Image Processor</a>
+ and <a href="./direct-5d-viewer">Direct 5D Viewer</a>
+.</p>
+<h2 id="the-challenge-research-code-vs-research-software">The Challenge: Research Code vs. Research Software</h2>
+<p>Research environments create a specific software development trap:</p>
+<p><strong>The pressure:</strong> Get results quickly for the next paper
+<strong>The consequence:</strong> Write one-off scripts that solve today&rsquo;s problem
+<strong>The accumulation:</strong> Years of copy-pasted code, modified slightly each time
+<strong>The cost:</strong> Bug fixes require editing dozens of files; improvements never propagate</p>
+<p>Most researchers accept this as inevitable. I decided to resist it.</p>
+<p><strong>MATLAB Utilities</strong> represents a different approach: treat research code like production software from day one.</p>
+<h2 id="the-solution-modular-organized-shared">The Solution: Modular, Organized, Shared</h2>
+<p>Rather than treating utilities as disposable scripts, I organized them into a structured system:</p>
+<p><strong>Core Principles:</strong></p>
+<ul>
+<li><strong>Modular packages</strong> - Functionality grouped by purpose (image processing, file I/O, visualization, metadata handling)</li>
+<li><strong>Unified interfaces</strong> - Consistent APIs across utilities (e.g., single reader function for all microscope formats)</li>
+<li><strong>Version control</strong> - Track changes, enable collaboration, maintain history</li>
+<li><strong>Open development</strong> - Public repository showing evolution, including mistakes and iterations</li>
+</ul>
+<p><strong>Key Utilities:</strong></p>
+<h3 id="microscopedata-package">MicroscopeData Package</h3>
+<p>The centerpiece: a unified reader/writer system for microscope images.</p>
+<p><strong>The Problem:</strong> Each microscope vendor uses different file formats. Analysis scripts become cluttered with format-specific reading code.</p>
+<p><strong>The Solution:</strong> Single command loads any format:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-matlab" data-lang="matlab"><span style="display:flex;"><span>[image, metadata] = MicroscopeData.Reader();
+</span></span></code></pre></div><p>Metadata stored in JSON files enables consistent reading across formats. Output always returned as standardized 5-D matrix (y, x, z, channel, time) regardless of input format.</p>
+<p><strong>Impact:</strong> Write analysis code once, apply to any microscope data.</p>
+<h3 id="additional-capabilities">Additional Capabilities</h3>
+<p><strong>Image Processing:</strong></p>
+<ul>
+<li>Denoising algorithms optimized for microscopy noise characteristics</li>
+<li>Multi-scale filtering and enhancement</li>
+<li>Morphological operations for biological structures</li>
+</ul>
+<p><strong>File Format Support:</strong></p>
+<ul>
+<li>TIFF (including multi-page, OME-TIFF)</li>
+<li>Keller Lab Block (KLB) compressed format</li>
+<li>Zeiss CZI, Nikon ND2, and other proprietary formats</li>
+<li>Integrates Bio-Formats reader under the hood for known formats</li>
+<li><strong>Key advantage:</strong> Users focus on <em>using</em> data, not <em>loading</em> it—regardless of file format</li>
+</ul>
+<p><strong>Analysis Tools:</strong></p>
+<ul>
+<li>Image registration (correcting motion/drift)</li>
+<li>Color unmixing for multi-fluorophore experiments</li>
+<li>Segmentation helpers and validation utilities</li>
+</ul>
+<p><strong>Visualization &amp; Export:</strong></p>
+<ul>
+<li>Web export for sharing results</li>
+<li>Movie creation from time-lapse data</li>
+<li>Interactive plotting utilities</li>
+</ul>
+<h2 id="the-impact-foundation-for-innovation">The Impact: Foundation for Innovation</h2>
+<h3 id="enabling-larger-projects">Enabling Larger Projects</h3>
+<p>These utilities became the foundation for more ambitious work:</p>
+<p><strong>Hydra Image Processor</strong> (2019)</p>
+<ul>
+<li>Built on data structures and interfaces from MATLAB Utilities</li>
+<li>Unified reading system enabled seamless GPU acceleration</li>
+<li>Consistent metadata handling made multi-dimensional processing reliable</li>
+</ul>
+<p><strong>Direct 5D Viewer</strong> (2018)</p>
+<ul>
+<li>Leveraged the same data formats and metadata standards</li>
+<li>Shared utilities reduced development time</li>
+<li>Consistent interfaces enabled tight integration</li>
+</ul>
+<h3 id="dissemination-through-matlab-file-exchange">Dissemination Through MATLAB File Exchange</h3>
+<p>Making tools accessible matters. All three major projects posted to MATLAB File Exchange for maximum reach:</p>
+<p><strong><a href="https://www.mathworks.com/matlabcentral/fileexchange/176123-hydra-image-processor" target="_blank">Hydra Image Processor</a>
+</strong></p>
+<ul>
+<li>Version 3.1.3 (December 2024)</li>
+<li>22 downloads, 5.0/5.0 rating</li>
+<li>GPU-accelerated processing accessible to non-CUDA programmers</li>
+</ul>
+<p><strong><a href="https://www.mathworks.com/matlabcentral/fileexchange/176924-direct-5d-viewer" target="_blank">Direct 5D Viewer</a>
+</strong></p>
+<ul>
+<li>Version 2.0 (December 2024)</li>
+<li>9 downloads</li>
+<li>Interactive visualization for 2D-5D datasets</li>
+</ul>
+<p><strong><a href="https://www.mathworks.com/matlabcentral/fileexchange/176913-microscope-utilities" target="_blank">Microscope Utilities</a>
+</strong></p>
+<ul>
+<li>Version 2.0.1 (December 2024)</li>
+<li>20 downloads</li>
+<li>Over a decade of functions for microscopy data manipulation</li>
+</ul>
+<h3 id="real-world-usage">Real-World Usage</h3>
+<p><strong>Research Deployment:</strong></p>
+<ul>
+<li>Used at HHMI Janelia Research Campus for microscopy analysis workflows</li>
+<li>Adopted by collaborating institutions worldwide</li>
+<li>Foundation for reproducible research pipelines</li>
+</ul>
+<p><strong>Educational Value:</strong></p>
+<ul>
+<li>Shows evolution of research software over time</li>
+<li>Demonstrates incremental improvement approach</li>
+<li>Provides examples for common microscopy analysis tasks</li>
+</ul>
+<h2 id="the-show-your-warts-philosophy">The &ldquo;Show Your Warts&rdquo; Philosophy</h2>
+<p>This repository is <strong>intentionally public from the early stages</strong>—including mistakes, iterations, and learning moments.</p>
+<h3 id="why-expose-imperfections">Why Expose Imperfections?</h3>
+<p><strong>Traditional approach:</strong> Keep code private until it&rsquo;s &ldquo;perfect,&rdquo; then release version 1.0</p>
+<p><strong>My approach:</strong> Develop in the open, show the evolution</p>
+<p><strong>Reasoning:</strong></p>
+<ol>
+<li><strong>Others learn from the journey</strong> - Seeing how code improves over time teaches more than seeing only the final result</li>
+<li><strong>Contributions exceed criticism</strong> - Open development invites collaboration and catches errors early</li>
+<li><strong>Confidence in the process</strong> - If the code is well-structured and modular from the start, early versions aren&rsquo;t embarrassing—they&rsquo;re documentation</li>
+<li><strong>Authentic growth</strong> - Learning is messy. Showing that messiness is honest</li>
+</ol>
+<p><strong>The risk:</strong> Exposing incomplete work might feel vulnerable</p>
+<p><strong>The reality:</strong> The contributions, collaborations, and improvements gained far outweigh any perceived embarrassment</p>
+<h2 id="technical-details">Technical Details</h2>
+<h3 id="repository-structure">Repository Structure</h3>
+<p><strong>Organization:</strong> MATLAB packages (directories prefixed with <code>+</code>) for clean namespacing</p>
+<p><strong>Primary Packages:</strong></p>
+<ul>
+<li><code>+MicroscopeData</code> - Unified image reading/writing</li>
+<li><code>+ImUtils</code> - Image processing utilities</li>
+<li><code>+Registration</code> - Drift correction and alignment</li>
+<li><code>+Segmentation</code> - Cell/structure segmentation helpers</li>
+<li><code>+Visualization</code> - Plotting and display functions</li>
+<li><code>+FileUtils</code> - Format conversion and I/O</li>
+</ul>
+<p><strong>Source Layout:</strong> Code in <code>src/MATLAB</code> with per-package subdirectories</p>
+<p><strong>Setup Method:</strong> Uses <code>startup.m</code> script to automatically add packages to MATLAB path (rather than copying to MATLAB&rsquo;s default folders)</p>
+<ul>
+<li>Preserves version control integration</li>
+<li>Enables managing multiple related repositories centrally</li>
+<li>Keeps installation simple and reversible</li>
+</ul>
+<h3 id="development-history">Development History</h3>
+<p><strong>Created:</strong> July 2018 (repository), with utilities dating back to 2013
+<strong>Language:</strong> MATLAB (99.6%)
+<strong>Contributors:</strong> Eric Wait (lead), Andrew Cohen, Mark Winter, Blair Rossetti
+<strong>Active Development:</strong> Ongoing maintenance and feature additions</p>
+<h3 id="integration-philosophy">Integration Philosophy</h3>
+<p>Rather than standalone utilities, these tools are designed to <strong>compose</strong>:</p>
+<ul>
+<li>Consistent data formats enable piping between functions</li>
+<li>Shared metadata structures prevent information loss</li>
+<li>Modular design allows mixing and matching capabilities</li>
+</ul>
+<p>This compositional approach enabled rapid prototyping of complex analysis workflows.</p>
+<h2 id="lessons-learned-start-early-stay-organized">Lessons Learned: Start Early, Stay Organized</h2>
+<h3 id="1-organize-before-you-have-to">1. Organize Before You Have To</h3>
+<p>By 2013, I already saw the pattern: small scripts duplicated and modified repeatedly. Starting the organization effort <strong>before</strong> it became overwhelming made it manageable.</p>
+<p><strong>Lesson:</strong> The best time to organize is when you have 10 functions, not 1,000.</p>
+<h3 id="2-modularity-compounds">2. Modularity Compounds</h3>
+<p>Each reusable function becomes the foundation for the next. The unified reader enabled more ambitious analysis. Better analysis revealed needs for better visualization. Each layer builds on previous work.</p>
+<p><strong>Lesson:</strong> Invest in good abstractions early—they pay dividends for years.</p>
+<h3 id="3-open-development-invites-contribution">3. Open Development Invites Contribution</h3>
+<p>Developing publicly led to:</p>
+<ul>
+<li>Bug reports from users with different microscope types</li>
+<li>Contributions for file formats I didn&rsquo;t have access to</li>
+<li>Validation that the utilities solved real problems for others</li>
+</ul>
+<p><strong>Lesson:</strong> The value of collaboration outweighs the risk of showing imperfect code.</p>
+<h3 id="4-consistency-enables-integration">4. Consistency Enables Integration</h3>
+<p>Using the same data structures and metadata formats across utilities made integration seamless. When building Hydra and the 5D Viewer, I didn&rsquo;t fight impedance mismatches—the foundations fit naturally.</p>
+<p><strong>Lesson:</strong> Design for integration from the start, even if you don&rsquo;t know what you&rsquo;ll integrate with.</p>
+<h3 id="5-good-enough-is-better-than-perfect-later">5. &ldquo;Good Enough&rdquo; Is Better Than &ldquo;Perfect Later&rdquo;</h3>
+<p>I didn&rsquo;t wait until I had the perfect architecture. I started with good-enough modularity and improved iteratively.</p>
+<p><strong>Result:</strong> A decade of working code that enabled real research, rather than an unreleased &ldquo;perfect&rdquo; solution.</p>
+<p><strong>Lesson:</strong> Ship early, improve continuously, stay organized throughout.</p>
+<h2 id="the-long-view-software-as-a-research-practice">The Long View: Software as a Research Practice</h2>
+<p>Most research software has a short life: written for one paper, abandoned after publication.</p>
+<p>MATLAB Utilities represents a different model: <strong>software as a sustained research practice</strong>.</p>
+<p><strong>The idea:</strong> Treat your code base as a career-long asset that grows with you.</p>
+<p><strong>The implementation:</strong></p>
+<ul>
+<li>Start organizing early (2013)</li>
+<li>Maintain consistently (2013-2025)</li>
+<li>Build larger projects on the foundation (Hydra 2019, 5D Viewer 2018)</li>
+<li>Share openly (GitHub + MATLAB File Exchange)</li>
+<li>Improve continuously (ongoing commits)</li>
+</ul>
+<p><strong>The outcome:</strong></p>
+<ul>
+<li>Software that outlasts individual projects</li>
+<li>Capabilities that compound over time</li>
+<li>A portfolio demonstrating long-term commitment</li>
+<li>Foundations that enable ambitious future work</li>
+</ul>
+<p>This isn&rsquo;t about building the &ldquo;perfect&rdquo; utility library. It&rsquo;s about demonstrating an <strong>organized, incremental, sustained approach</strong> to solving problems.</p>
+<p>It&rsquo;s about starting early, sharing openly, improving continuously, and building foundations that enable future innovation.</p>
+<h2 id="links--resources">Links &amp; Resources</h2>
+<p><strong>GitHub Repository:</strong> <a href="https://github.com/ericwait/matlab-utilities" target="_blank">github.com/ericwait/matlab-utilities</a>
+</p>
+<p><strong>MATLAB File Exchange:</strong></p>
+<ul>
+<li><a href="https://www.mathworks.com/matlabcentral/fileexchange/176123-hydra-image-processor" target="_blank">Hydra Image Processor</a>
+</li>
+<li><a href="https://www.mathworks.com/matlabcentral/fileexchange/176924-direct-5d-viewer" target="_blank">Direct 5D Viewer</a>
+</li>
+<li><a href="https://www.mathworks.com/matlabcentral/fileexchange/176913-microscope-utilities" target="_blank">Microscope Utilities</a>
+</li>
+</ul>
+<p><strong>Related Projects:</strong></p>
+<ul>
+<li><a href="./hydra">Hydra Image Processor</a>
+ - GPU-accelerated processing built on these foundations</li>
+<li><a href="./direct-5d-viewer">Direct 5D Viewer</a>
+ - Interactive visualization leveraging shared data structures</li>
+<li><a href="./janelia">Janelia Research Campus</a>
+ - Real-world deployment context</li>
+</ul>
+<p><strong>Technical Stack:</strong></p>
+<ul>
+<li>MATLAB for scientific computing</li>
+<li>JSON for metadata standardization</li>
+<li>Multiple microscope format readers</li>
+<li>Modular package organization</li>
+</ul>
+<hr>
+<h2 id="how-this-connects">How This Connects</h2>
+<p><strong>Building Foundations:</strong> See how early organization enabled larger innovations → <a href="./hydra">Hydra Image Processor</a>
+ and <a href="./direct-5d-viewer">Direct 5D Viewer</a>
+</p>
+<p><strong>&ldquo;Show Your Warts&rdquo; Philosophy:</strong> Explore authenticity in product development → <a href="../#-what-makes-me-different">Home page</a>
+</p>
+<p><strong>Long-Term Excellence:</strong> Read about sustained commitment to quality → <a href="../about#how-i-build-long-term-excellence">About</a>
+</p>
+<p><strong>Modular Problem-Solving:</strong> Compare with systematic experimental design → <a href="./janelia">Janelia methodology</a>
+</p>
+<p><strong>Research to Production:</strong> See how organized foundations enable production systems → <a href="./elephas">Elephas Biosciences</a>
+</p>
+<p><strong>Complete Journey:</strong> Learn about my path through computational science → <a href="../about/full_journey">Full Journey</a>
+</p>
+<hr>
+<p><em>This project represents more than code—it represents an approach. Start early, stay organized, share openly, and build foundations that compound over time.</em></p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://ericwait.com/" >
+    &copy;  Eric Wait 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

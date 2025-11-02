@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About on Eric Wait</title>
-    <link>http://localhost:1313/about/</link>
+    <link>https://ericwait.com/about/</link>
     <description>Recent content in About on Eric Wait</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 27 Sep 2025 16:15:49 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ericwait.com/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Full Life Journey</title>
-      <link>http://localhost:1313/about/full_journey/</link>
+      <title>Full Journey</title>
+      <link>https://ericwait.com/about/full_journey/</link>
       <pubDate>Sat, 27 Sep 2025 16:15:49 -0500</pubDate>
-      <guid>http://localhost:1313/about/full_journey/</guid>
-      <description>&lt;p&gt;I was born in the 80&amp;rsquo;s in a mid-size town in Wisconsin.&#xA;I feel like my start was quite unassuming.&#xA;My family had a heavy work ethic and would unwind in true Wisconsin fashion at the end of each week.&#xA;I spent many of my earlier days playing on or around the Chippewa river.&#xA;This is where I learned to &lt;a href=&#34;https://www.google.com/maps/d/edit?mid=zAS1rhpwZS2k.k2-ecmkfhNYg&#34; target=&#34;_blank&#34;&gt;waterski&lt;/a&gt;&#xD;&#xA; and enjoy the outdoors.&#xA;I worked hard through my high school years to the point where I dropped some of my extra curricular activities.&#xA;Hard work and the meager wealth that would bring was always the emphasis from my parents.&#xA;I wanted more though.&#xA;I found that joining the Air National Guard and attending college was a good compromise.&#xA;The military would show that I could work hard and college would help me learn something that could not be had through experience alone.&lt;/p&gt;</description>
+      <guid>https://ericwait.com/about/full_journey/</guid>
+      <description>&lt;h2 id=&#34;wisconsin-roots&#34;&gt;Wisconsin Roots&lt;/h2&gt;&#xA;&lt;p&gt;Born in the 1980s in a mid-sized Wisconsin town, I spent my early years on the Chippewa River - &lt;a href=&#34;https://www.google.com/maps/d/edit?mid=zAS1rhpwZS2k.k2-ecmkfhNYg&#34; target=&#34;_blank&#34;&gt;waterskiing&lt;/a&gt;&#xD;&#xA;, exploring outdoors, and absorbing my family&amp;rsquo;s strong work ethic.&#xA;But I wanted more than the path immediately visible to me.&lt;/p&gt;&#xA;&lt;p&gt;The solution: join the Air National Guard and pursue college.&#xA;Military service would prove I could work hard and deliver under pressure.&#xA;College would provide knowledge that experience alone couldn&amp;rsquo;t teach.&#xA;Looking back, it was my first exercise in reverse-thinking - identifying what success looked like, then working backward to achieve it.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

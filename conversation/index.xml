@@ -16,6 +16,13 @@
       <description>A growing list of quotes as I encounter them.</description>
     </item>
     <item>
+      <title>Future Classic Movies</title>
+      <link>http://localhost:1313/conversation/classic-movies/</link>
+      <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/conversation/classic-movies/</guid>
+      <description>Will there be classics in the future?</description>
+    </item>
+    <item>
       <title>References for getting a new dog</title>
       <link>http://localhost:1313/conversation/dog-references/</link>
       <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>

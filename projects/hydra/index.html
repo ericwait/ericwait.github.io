@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Hydra Image Processor | Eric Wait</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Open-source GPU-accelerated image analysis library achieving 100x speedups">
+    <meta name="generator" content="Hugo 0.151.0">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.efe4d852f731d5d1fbb87718387202a97aafd768cdcdaed0662bbe6982e91824.css" >
+
+
+
+  
+    <link rel="stylesheet" href="/css/custom.css">
+  
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="https://ericwait.com/projects/hydra/">
+    
+
+    <meta property="og:url" content="https://ericwait.com/projects/hydra/">
+  <meta property="og:site_name" content="Eric Wait">
+  <meta property="og:title" content="Hydra Image Processor">
+  <meta property="og:description" content="Open-source GPU-accelerated image analysis library achieving 100x speedups">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2019-06-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2019-06-15T00:00:00+00:00">
+
+  <meta itemprop="name" content="Hydra Image Processor">
+  <meta itemprop="description" content="Open-source GPU-accelerated image analysis library achieving 100x speedups">
+  <meta itemprop="datePublished" content="2019-06-15T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2019-06-15T00:00:00+00:00">
+  <meta itemprop="wordCount" content="623">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Hydra Image Processor">
+  <meta name="twitter:description" content="Open-source GPU-accelerated image analysis library achieving 100x speedups">
+
+      
+    
+	
+  </head><body class="ma0 sans-serif bg-light-gray production">
+
+    
+   
+  
+
+  
+  
+  
+  <header class="cover bg-center" style="background-image: url('https://ericwait.com/images/circuits.png');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Eric Wait
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/pubs/" title="Publications page">
+              Publications
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/photos/" title="Photography page">
+              Photography
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">Hydra Image Processor</div>
+          
+            <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              Open-source GPU-accelerated image analysis library achieving 100x speedups
+            </div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        PROJECTS
+      </aside>
+      <div id="sharing" class="mt3 ananke-socials"></div>
+
+      <h1 class="f1 sans-serif mt3 mb1">Hydra Image Processor</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-06-15T00:00:00Z">June 15, 2019</time>
+
+      
+      
+        <span class="f6 mv4 dib tracked"> - 3 minutes read</span>
+        <span class="f6 mv4 dib tracked"> - 623 words</span>
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy sans-serif f4 tj nested-links nested-img mid-gray pr6-l"><h2 id="quick-takeaways">Quick Takeaways</h2>
+<p><strong>Problem:</strong> Biological microscopy analysis too slow (days per dataset with CPU-based methods)</p>
+<p><strong>Solution:</strong> GPU-accelerated library with accessible Python/MATLAB wrappers—leverage GPUs without writing CUDA</p>
+<p><strong>Impact:</strong> 100x speedups, global adoption by research institutions, published in <em>Bioinformatics</em> (2019)</p>
+<p><strong>Philosophy:</strong> The best optimization is one people actually use—accessible interfaces matter as much as raw performance</p>
+<p><strong>Status:</strong> 12+ years continuous development (first commit August 2013), still actively improved today</p>
+<p><a href="https://github.com/ericwait/hydra-image-processor" target="_blank">GitHub →</a>
+ | <a href="https://ericwait.com/pubs" target="_blank">Publication →</a>
+ | <a href="https://www.mathworks.com/matlabcentral/fileexchange/176123-hydra-image-processor" target="_blank">MATLAB File Exchange →</a>
+</p>
+<hr>
+<h2 id="the-challenge">The Challenge</h2>
+<p>Biological microscopy generates massive multidimensional datasets (1D-5D) that are too slow to process with traditional CPU-based methods. Researchers needed a way to analyze terabyte-scale time-lapse imaging data in reasonable timeframes while maintaining scientific accuracy and reproducibility.</p>
+<p>Existing solutions were either:</p>
+<ul>
+<li>Too slow (CPU-based MATLAB/Python)</li>
+<li>Too specialized (single-purpose tools)</li>
+<li>Too difficult to integrate (no accessible interfaces)</li>
+</ul>
+<h2 id="the-solution">The Solution</h2>
+<p>I architected <strong>Hydra Image Processor</strong>, a hardware/GPU-accelerated signal processing and image analysis library with Python and MATLAB wrappers. The system enables researchers to leverage GPU acceleration without writing CUDA code themselves.</p>
+<p><strong>Key Technical Innovations:</strong></p>
+<ul>
+<li><strong>Custom CUDA kernels</strong> optimized for 1D-5D biological imaging workflows</li>
+<li><strong>Dual API design</strong> with both Python and MATLAB wrappers for broad accessibility</li>
+<li><strong>Memory-efficient streaming</strong> for datasets larger than GPU memory</li>
+<li><strong>Reproducible pipelines</strong> with validated algorithms for segmentation, tracking, and feature extraction</li>
+<li><strong>Cross-platform</strong> support (Windows, Linux, macOS)</li>
+</ul>
+<p><strong>Architecture:</strong></p>
+<p>The core engine is written in C++ with custom CUDA kernels for compute-intensive operations. High-level wrappers expose functionality through intuitive Python and MATLAB interfaces, making GPU acceleration accessible to researchers with no parallel programming experience.</p>
+<p><img src="/images/hydra-architecture-diagram.svg" alt="Hydra Architecture Diagram">
+<em>Figure: Hydra&rsquo;s layered architecture from user interfaces (Python/MATLAB/C++) through the API layer and core processing engine, down to hardware abstraction and physical GPUs. The system handles 5D data structures (X, Y, Z, λ, t) with automatic memory management and linear scaling across multiple GPUs.</em></p>
+<h2 id="the-impact">The Impact</h2>
+<p><strong>100x Speedup:</strong> Reduced analysis time from days to hours for typical research workflows</p>
+<p><strong>Global Adoption:</strong> Used by research institutions worldwide for biological imaging analysis</p>
+<p><strong>Published in Bioinformatics (2019):</strong> Peer-reviewed validation of the approach and performance gains</p>
+<p><strong>Open Source:</strong> Freely available to the research community, enabling reproducible science</p>
+<p><strong>Production Deployments:</strong> Powers analysis pipelines at HHMI Janelia Research Campus and collaborating institutions</p>
+<p><strong>Visualization Integration:</strong> Works seamlessly with <a href="./direct-5d-viewer">Direct 5D Viewer</a>
+ for interactive visualization of processed data</p>
+<h2 id="technical-stack">Technical Stack</h2>
+<p><strong>Core:</strong> C++, CUDA, DirectX
+<strong>APIs:</strong> Python (NumPy integration), MATLAB
+<strong>Algorithms:</strong> Segmentation, tracking, feature extraction, deconvolution
+<strong>Data Formats:</strong> Multi-dimensional biological imaging formats (TIFF, HDF5)
+<strong>Build System:</strong> CMake, vcpkg for dependencies</p>
+<h2 id="recognition">Recognition</h2>
+<ul>
+<li><strong>Bioinformatics Publication (2019):</strong> &ldquo;Hydra Image Processor: 5-D GPU image analysis library with MATLAB/Python wrappers&rdquo;</li>
+<li><strong>Cited in Research:</strong> Used in multiple Nature and Nature Communications publications</li>
+<li><strong>Open Source Community:</strong> Active GitHub repository with contributions from researchers globally</li>
+</ul>
+<h2 id="links">Links</h2>
+<ul>
+<li><strong>GitHub:</strong> <a href="https://github.com/ericwait/hydra-image-processor" target="_blank">github.com/ericwait/hydra-image-processor</a>
+</li>
+<li><strong>Publication:</strong> <a href="https://ericwait.com/pubs" target="_blank">Bioinformatics 2019</a>
+</li>
+<li><strong>Documentation:</strong> Available in repository</li>
+<li><strong>Related Projects:</strong> <a href="./direct-5d-viewer">Direct 5D Viewer</a>
+ for interactive visualization, <a href="./janelia">Janelia Research Campus</a>
+ for deployment context</li>
+</ul>
+<hr>
+<h2 id="lessons-learned">Lessons Learned</h2>
+<p>Building Hydra taught me the importance of <strong>accessible interfaces over raw performance</strong>. While achieving 100x speedups was technically impressive, the real impact came from Python/MATLAB wrappers that let researchers use GPU acceleration without learning CUDA. The best optimization is one that people actually use.</p>
+<p>This project also reinforced my belief in <strong>physics-informed design</strong> - understanding the structure of biological imaging data (sparse signals, temporal coherence, spatial locality) allowed targeted optimizations that generic image processing libraries couldn&rsquo;t match.</p>
+<hr>
+<h2 id="how-this-connects">How This Connects</h2>
+<p><strong>Problem-Solving Approach:</strong> See how reverse-thinking applies across domains → <a href="./janelia">Janelia methodology</a>
+</p>
+<p><strong>Human-Centered Design:</strong> Hydra&rsquo;s accessible interfaces reflect the same philosophy as visual perception-based tools → <a href="./direct-5d-viewer">Direct 5D Viewer</a>
+</p>
+<p><strong>Building What Lasts:</strong> Explore sustainable development practices and early organization → <a href="./matlab-utilities">MATLAB Utilities</a>
+</p>
+<p><strong>Technical Philosophy:</strong> Read more about physics-informed ML and domain knowledge → <a href="../#-my-philosophy-the-best-model-is-the-one-you-dont-need-to-train">Home page</a>
+</p>
+<p><strong>Real-World Deployment:</strong> See Hydra used in production research → <a href="./janelia">Janelia Research Campus</a>
+</p>
+<p><strong>Full Background:</strong> Learn about my journey from photography to computational science → <a href="../about">About</a>
+</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://ericwait.com/" >
+    &copy;  Eric Wait 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
