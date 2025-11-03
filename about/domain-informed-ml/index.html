@@ -1,0 +1,176 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v4.16.19"><!-- Primary Meta Tags --><title>Domain-Informed ML</title><meta name="title" content="Domain-Informed ML"><meta name="description" content="The best optimization is the computation you don't have to do"><link rel="canonical" href="https://ericwait.com/about/domain-informed-ml/"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://ericwait.com/about/domain-informed-ml/"><meta property="og:title" content="Domain-Informed ML"><meta property="og:description" content="The best optimization is the computation you don't have to do"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://ericwait.com/about/domain-informed-ml/"><meta property="twitter:title" content="Domain-Informed ML"><meta property="twitter:description" content="The best optimization is the computation you don't have to do"><!-- Fonts --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="/_astro/domain-informed-ml.DiRwwqiG.css">
+<link rel="stylesheet" href="/_astro/domain-informed-ml.BtVtBs5T.css"><script type="module">const e=typeof localStorage<"u"&&localStorage.getItem("theme")?localStorage.getItem("theme"):window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";e==="dark"?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark");e&&window.localStorage.setItem("theme",e);const m=()=>{const t=document.documentElement;t.classList.toggle("dark");const n=t.classList.contains("dark");localStorage.setItem("theme",n?"dark":"light");const l=document.getElementById("mobile-theme-label");l&&(l.textContent=n?"Dark":"Light")};document.getElementById("theme-toggle")?.addEventListener("click",m);document.getElementById("mobile-theme-toggle")?.addEventListener("click",m);document.getElementById("mobile-menu-button")?.addEventListener("click",()=>{document.getElementById("mobile-menu")?.classList.toggle("hidden")});const o=document.getElementById("mobile-theme-label");o&&(o.textContent=e==="dark"?"Dark":"Light");
+</script></head> <body class="min-h-screen flex flex-col"> <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800"> <div class="container"> <div class="flex items-center justify-between h-16"> <!-- Logo/Name --> <a href="/" class="text-xl font-bold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+Eric Wait
+</a> <!-- Desktop Navigation --> <div class="hidden md:flex items-center space-x-8"> <a href="/about" class="text-sm font-medium transition-colors text-primary-600 dark:text-primary-400"> About </a><a href="/projects" class="text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"> Projects </a><a href="/publications" class="text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"> Publications </a><a href="/photography" class="text-sm font-medium transition-colors text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400"> Photography </a> <!-- Theme Toggle --> <button id="theme-toggle" type="button" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle theme"> <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20"> <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path> </svg> <svg id="theme-toggle-dark-icon" class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20"> <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path> </svg> </button> </div> <!-- Mobile Menu Button --> <button id="mobile-menu-button" type="button" class="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" aria-label="Toggle menu"> <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path> </svg> </button> </div> </div> <!-- Mobile Menu --> <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 dark:border-gray-800"> <div class="container py-4 space-y-3"> <a href="/about" class="block px-4 py-2 rounded-lg text-base font-medium transition-colors bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400"> About </a><a href="/projects" class="block px-4 py-2 rounded-lg text-base font-medium transition-colors text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"> Projects </a><a href="/publications" class="block px-4 py-2 rounded-lg text-base font-medium transition-colors text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"> Publications </a><a href="/photography" class="block px-4 py-2 rounded-lg text-base font-medium transition-colors text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"> Photography </a> <button id="mobile-theme-toggle" type="button" class="w-full flex items-center justify-between px-4 py-2 rounded-lg text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"> <span>Theme</span> <span id="mobile-theme-label" class="text-sm">Light</span> </button> </div> </div> </nav>  <main class="flex-1 mt-16">  <article class="section" data-astro-cid-scuu7fyy> <div class="container max-w-4xl" data-astro-cid-scuu7fyy> <!-- Header --> <header class="mb-12" data-astro-cid-scuu7fyy> <h1 class="text-4xl md:text-5xl font-bold mb-4" data-astro-cid-scuu7fyy> Domain-Informed ML </h1> <p class="text-xl text-gray-600 dark:text-gray-400" data-astro-cid-scuu7fyy> The best optimization is the computation you don&#39;t have to do </p> </header> <!-- Content --> <div class="content-body" data-astro-cid-scuu7fyy> <h2 id="the-best-optimization-is-the-computation-you-dont-do">The Best Optimization is the Computation You Don’t Do</h2>
+<p>By incorporating physical constraints and domain knowledge into ML systems, I build solutions that are more efficient, interpretable, and trustworthy than purely data-driven approaches.</p>
+<p>This isn’t about choosing between ML and physics—it’s about using each where it excels.</p>
+<hr/>
+<h2 id="the-core-philosophy">The Core Philosophy</h2>
+<p><strong>Physics-informed ML: Use domain knowledge to eliminate unnecessary computation.</strong></p>
+<p>Instead of asking an ML model to learn everything from scratch, encode what we already know about how the world works. Let the model focus on what we don’t know.</p>
+<h3 id="the-advantage">The Advantage</h3>
+<p><strong>Purely data-driven approaches:</strong></p>
+<ul>
+<li>Learn relationships from scratch</li>
+<li>Require massive datasets</li>
+<li>Struggle with edge cases</li>
+<li>Produce black-box predictions</li>
+<li>Computationally expensive</li>
+</ul>
+<p><strong>Domain-informed approaches:</strong></p>
+<ul>
+<li>Encode known physics/constraints</li>
+<li>Require less training data</li>
+<li>Respect physical limitations</li>
+<li>Produce interpretable results</li>
+<li>Computationally efficient</li>
+</ul>
+<hr/>
+<h2 id="real-world-examples">Real-World Examples</h2>
+<h3 id="image-processing-leveraging-optical-physics">Image Processing: Leveraging Optical Physics</h3>
+<p><strong>The problem:</strong> Microscope images are blurry due to optical diffraction.</p>
+<p><strong>Purely data-driven:</strong> Train a neural network on millions of blurry/sharp image pairs. Hope it learns the physics of light propagation.</p>
+<p><strong>Domain-informed:</strong> Use the known Point Spread Function (PSF) from optical physics. Deconvolution with known PSF is faster, more accurate, works with less data.</p>
+<p><strong>Result:</strong> 10-100x faster processing, physically accurate results, works on new microscope types without retraining.</p>
+<h3 id="biological-imaging-incorporating-spatial-structure">Biological Imaging: Incorporating Spatial Structure</h3>
+<p><strong>The problem:</strong> Track objects (cells, organelles) across time in microscopy videos.</p>
+<p><strong>Purely data-driven:</strong> Learn motion patterns from scratch, no assumptions about physics.</p>
+<p><strong>Domain-informed:</strong> Encode physics constraints:</p>
+<ul>
+<li>Objects don’t teleport (continuity)</li>
+<li>Movement follows inertia (smooth motion)</li>
+<li>Structures have characteristic sizes (spatial constraints)</li>
+</ul>
+<p><strong>Result:</strong> More robust tracking with less training data, fewer false positives, interpretable failure modes.</p>
+<h3 id="signal-processing-known-frequency-constraints">Signal Processing: Known Frequency Constraints</h3>
+<p><strong>The problem:</strong> Separate signal from noise in measurements.</p>
+<p><strong>Purely data-driven:</strong> Learn noise patterns from labeled examples.</p>
+<p><strong>Domain-informed:</strong> Encode known signal characteristics:</p>
+<ul>
+<li>Expected frequency range (Nyquist limits)</li>
+<li>Physical bandwidth limitations</li>
+<li>Sensor noise profiles</li>
+</ul>
+<p><strong>Result:</strong> Better signal recovery, works in real-time, no training data required.</p>
+<hr/>
+<h2 id="why-it-matters">Why It Matters</h2>
+<h3 id="efficiency">Efficiency</h3>
+<p><strong>Compute is expensive.</strong> Cloud GPU time costs money. On-device inference drains batteries. Edge deployment has power constraints.</p>
+<p>Domain-informed approaches reduce computational requirements by eliminating unnecessary learning.</p>
+<h3 id="interpretability">Interpretability</h3>
+<p><strong>Black boxes are risky.</strong> In medical diagnostics, aerospace, finance—you need to understand <em>why</em> the model made a prediction.</p>
+<p>Physics-informed models produce interpretable results because the physics is explicit, not hidden in learned weights.</p>
+<h3 id="trustworthiness">Trustworthiness</h3>
+<p><strong>Models must respect reality.</strong> A purely data-driven model might predict physically impossible outcomes because it never learned the constraints.</p>
+<p>Domain-informed models can’t violate known physics—they’re built on it.</p>
+<h3 id="data-efficiency">Data Efficiency</h3>
+<p><strong>Labeled data is expensive.</strong> Medical imaging annotations require expert radiologists. Scientific datasets require expensive experiments.</p>
+<p>Domain-informed approaches learn from less data because they start with knowledge, not ignorance.</p>
+<hr/>
+<h2 id="where-domain-knowledge-comes-from">Where Domain Knowledge Comes From</h2>
+<h3 id="optics-and-signal-processing">Optics and Signal Processing</h3>
+<p>My background in microscopy and imaging physics provides deep understanding of:</p>
+<ul>
+<li>Light propagation and diffraction</li>
+<li>Sensor noise characteristics</li>
+<li>Fourier analysis and frequency constraints</li>
+<li>Spatial and temporal sampling limits</li>
+</ul>
+<h3 id="biological-systems">Biological Systems</h3>
+<p>Years working with biological datasets teach:</p>
+<ul>
+<li>Characteristic spatial scales (cell sizes, organelle dimensions)</li>
+<li>Temporal dynamics (movement speeds, reaction timescales)</li>
+<li>Physical constraints (membrane mechanics, diffusion limits)</li>
+<li>Statistical properties (distributions, correlations)</li>
+</ul>
+<h3 id="real-world-deployment">Real-World Deployment</h3>
+<p>Production systems reveal constraints that matter:</p>
+<ul>
+<li>Computational budgets (time, power, cost)</li>
+<li>Hardware limitations (memory, bandwidth)</li>
+<li>Latency requirements (real-time processing)</li>
+<li>Interpretability needs (regulatory compliance)</li>
+</ul>
+<hr/>
+<h2 id="the-philosophy-in-practice">The Philosophy in Practice</h2>
+<h3 id="start-with-physics">Start With Physics</h3>
+<p>Before training a model, ask:</p>
+<ul>
+<li>What do we know about this problem from first principles?</li>
+<li>What physical constraints must the solution respect?</li>
+<li>What can we solve analytically instead of learning?</li>
+</ul>
+<h3 id="use-ml-where-its-needed">Use ML Where It’s Needed</h3>
+<p>ML excels at:</p>
+<ul>
+<li>Complex non-linear relationships</li>
+<li>Patterns too subtle for hand-crafted rules</li>
+<li>Situations where physics is unknown or intractable</li>
+</ul>
+<p>ML struggles at:</p>
+<ul>
+<li>Relationships we already understand</li>
+<li>Enforcing hard constraints</li>
+<li>Extrapolation beyond training distribution</li>
+</ul>
+<p><strong>Combine them:</strong> Use physics for what we know, ML for what we don’t.</p>
+<h3 id="validate-against-reality">Validate Against Reality</h3>
+<p>Physics-informed models should:</p>
+<ul>
+<li>Respect known constraints (conservation laws, causality)</li>
+<li>Produce physically plausible outputs</li>
+<li>Fail gracefully at boundaries</li>
+<li>Provide interpretable failure modes</li>
+</ul>
+<p>If a model predicts the impossible, it’s wrong—even if the metrics look good.</p>
+<hr/>
+<h2 id="the-computational-win">The Computational Win</h2>
+<p><strong>Example: Image deconvolution</strong></p>
+<p><strong>Purely data-driven (neural network):</strong></p>
+<ul>
+<li>Train on millions of image pairs</li>
+<li>Days of GPU training time</li>
+<li>Gigabytes of model weights</li>
+<li>Inference: 100ms per image</li>
+<li>Retraining needed for each new microscope type</li>
+</ul>
+<p><strong>Domain-informed (PSF-based deconvolution):</strong></p>
+<ul>
+<li>No training required</li>
+<li>Knowledge from optical physics</li>
+<li>Kilobytes of code</li>
+<li>Inference: 10ms per image</li>
+<li>Works on any microscope (just measure PSF)</li>
+</ul>
+<p><strong>Result:</strong> 10x faster, no training cost, better generalization.</p>
+<p>This pattern repeats across domains: <strong>The computation you don’t do is the fastest computation.</strong></p>
+<hr/>
+<h2 id="when-to-use-domain-informed-approaches">When to Use Domain-Informed Approaches</h2>
+<p><strong>Strong fit:</strong></p>
+<ul>
+<li>Physical systems with known governing equations</li>
+<li>Problems where interpretability is critical</li>
+<li>Deployments with strict computational budgets</li>
+<li>Domains with limited training data</li>
+<li>Applications requiring provable guarantees</li>
+</ul>
+<p><strong>Weak fit:</strong></p>
+<ul>
+<li>Problems with unknown underlying physics</li>
+<li>Abundant labeled data, few computational constraints</li>
+<li>Purely perceptual tasks (image aesthetics, language understanding)</li>
+<li>Situations where black-box predictions are acceptable</li>
+</ul>
+<p><strong>Best:</strong> Most real problems benefit from hybrid approaches—physics where we have it, learning where we need it.</p>
+<hr/>
+<h2 id="connect">Connect</h2>
+<p>If your ML systems are computationally expensive, require massive training data, produce black-box predictions, or violate physical constraints—domain-informed approaches can help.</p>
+<p><strong><a href="../projects/hydra">See it applied in projects →</a></strong></p>
+<p><strong><a href="./index">Back to About →</a></strong></p>
+<p><strong><a href="mailto:info@ericwait.com">Contact</a></strong></p> </div> </div> </article>  </main> <footer class="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800"> <div class="container py-12"> <div class="grid grid-cols-1 md:grid-cols-3 gap-8"> <!-- About --> <div> <h3 class="text-lg font-bold mb-4">Eric Wait</h3> <p class="text-gray-600 dark:text-gray-400 text-sm">
+Principal Data Scientist | GPU/ML Systems Engineer | Physics-Informed AI Specialist
+</p> </div> <!-- Quick Links --> <div> <h3 class="text-lg font-bold mb-4">Quick Links</h3> <ul class="space-y-2"> <li><a href="/about" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors">About</a></li> <li><a href="/projects" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors">Projects</a></li> <li><a href="/publications" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors">Publications</a></li> <li><a href="/photography" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors">Photography</a></li> </ul> </div> <!-- Social --> <div> <h3 class="text-lg font-bold mb-4">Connect</h3> <div class="flex space-x-4"> <a href="https://github.com/ericwait" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" aria-label="GitHub"> <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"> <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path> </svg>    </a><a href="https://www.linkedin.com/in/ericwaitinfo/" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" aria-label="LinkedIn">  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"> <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path> </svg>   </a><a href="https://twitter.com/ericwait" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" aria-label="Twitter">   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"> <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path> </svg>  </a><a href="https://www.instagram.com/eric.wait/" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors" aria-label="Instagram">    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"> <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path> </svg> </a> </div> </div> </div> <!-- Copyright --> <div class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800 text-center"> <p class="text-sm text-gray-600 dark:text-gray-400">
+© 2025 Eric Wait. All rights reserved.
+</p> </div> </div> </footer> </body></html> 
